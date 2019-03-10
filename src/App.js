@@ -42,6 +42,18 @@ markComplete = (id) => {
   }) })
 }
 
+
+//Add Todo
+TodoForm = (task) => {
+  // console.log(task)
+  const newTodo = {
+    id: '',
+    task: task,
+    completed: false
+  }
+  this.setState({ todo: [...this.state.todo, newTodo]})
+}
+
 //Delete Todo
 deleteTodo = (id) => {
   this.setState({todo: [...this.state.todo.filter(todo => todo.id !== id)] });
@@ -61,10 +73,10 @@ todoForm = (task) => {
  render() {
    console.log(this.state.todo)
     return (
-      <div className='container'>
       <div className='App'>
+      <div className='container'>
       <Header />
-      <TodoForm todoForm={this.todoForm} />
+      <TodoForm todoForm={this.TodoForm} />
         <Todo todo={this.state.todo} markComplete={this.markComplete} deleteTodo={this.deleteTodo} />
       </div>
       </div>
