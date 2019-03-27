@@ -5,6 +5,12 @@ import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
 import Header from './components/TodoComponents/Header';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faCheckSquare);
+
 // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
@@ -47,7 +53,7 @@ markComplete = (id) => {
 TodoForm = (task) => {
   // console.log(task)
   const newTodo = {
-    id: '',
+    id: '5',
     task: task,
     completed: false
   }
