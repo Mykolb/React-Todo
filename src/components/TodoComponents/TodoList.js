@@ -29,7 +29,7 @@ console.log(this.props)
         return (
             <div style={this.getStyle()}>
                 <p>
-                <input type='checkbox' onChange={this.props.markComplete.bind(this, id)} /> {''}
+                <input type='checkbox' onChange={this.props.markComplete.bind(this, id)} />
                 {task}
                 <button onClick={this.props.deleteTodo.bind(this, id)} style={btnStyle}>
                 <FontAwesomeIcon icon='check-square' />

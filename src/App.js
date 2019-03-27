@@ -53,7 +53,7 @@ markComplete = (id) => {
 TodoForm = (task) => {
   // console.log(task)
   const newTodo = {
-    id: '5',
+    id: '',
     task: task,
     completed: false
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // import Todo from './Todo';
 
 
@@ -37,7 +38,12 @@ export class TodoForm extends Component {
     }
 }
 
-
+// PropTypes
+TodoForm.propTypes = {
+    todoForm: PropTypes.object.isRequired,
+    markComplete: PropTypes.func.isRequired,
+    deleteTodo: PropTypes.func.isRequired
+}
 
 
 
