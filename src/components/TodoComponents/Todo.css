@@ -1,0 +1,18 @@
+.container {
+    padding: 0 1rem;
+}
+
+.btn {
+    display: inline-bock;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    color: gray;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: pink;
+    border: 1px dashed white;
+    background-color: lightskyblue;
+}
